@@ -19,15 +19,16 @@ html {
 body {
     background-color:var(--black-base);
     font-family: 'Quicksand', sans-serif;
-    height: 100vh;
     color: var(--white-base);
     font-weight: 700;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
     background-color: var(--white-base);
     color: var(--black-base);
-    margin: -10px;
+    margin: -5px;
     padding: 20px;
     display: flex;
 }
@@ -53,6 +54,11 @@ nav {
     background-size: 100% 100%;
     background-position-x: left;
     color: var(--biru);
+}
+
+.img-logo {
+    height: 40px;
+    width: auto;
 }
 
 .nav-link-container {
@@ -81,14 +87,56 @@ nav {
     color: var(--biru);
 }
 
-.main {
-    background-color: var(--white-base);
-    margin: 150px 20px 180px 20px;
-    padding: 20px;
-    text-align: center;
-    color: var(--black-base);
-    border-radius: 10px;
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
+
+.greeting {
+    margin:-15px;
+    text-align: center;
+    color: var(--white-base);
+    padding: 20px;
+    letter-spacing: 2px;
+    height: 100vh;
+}
+
+.h1-ft {
+    background-color: var(--white-base);
+    color: var(--black-base);
+    padding: 5px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 150px;
+    font-size: 80px;
+}
+
+.h1-ft:hover {
+    outline: 3px solid var(--black-base);
+    cursor: pointer;
+    transition :0.2s;
+}
+
+.h1-univ {
+    font-size: 40px;
+}
+
+
+
+.welcome {
+    background-color: var(--white-base);
+    color: var(--black-base);
+    padding: 20px;
+
+}
+
 
 footer {
     background-color: var(--white-base);
