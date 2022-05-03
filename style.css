@@ -13,7 +13,6 @@ html {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    box-sizing:border-box;
 }
 
 body {
@@ -32,11 +31,10 @@ nav {
     display: flex;
 }
 
-
 .img-logo {
     height: 30px;
     width: auto;
-    margin: 5px;
+    margin: 10px;
 }
 
 .nav-link {
@@ -64,8 +62,6 @@ nav {
     display: flex;
     gap: 20px;
     list-style-type: none;
-    margin: 10px 10px -10px 10px;
-    justify-content: flex-end;
 }
 
 .divider {
@@ -87,12 +83,10 @@ video {
 }
 
 .greeting {
-    margin:-15px;
     text-align: center;
     color: var(--white-base);
-    padding: 20px;
+    padding: 100px 20px 140px 20px;
     letter-spacing: 2px;
-    height: 100vh;
 }
 
 .h1-ft {
@@ -113,7 +107,6 @@ video {
     background-size: 0% 100%;
     background-position-x: right;
     transition: background-size 1200ms;
-    padding: 1px;
 }
 
 .h1-ft:hover {
@@ -135,7 +128,6 @@ video {
     height: 100vh;
 }
 
-
 footer {
     background-color: var(--white-base);
     color: var(--black-base);
@@ -147,10 +139,23 @@ footer {
 @media screen and (max-width: 768px) {
     body, html {
         scroll-behavior: smooth;
-        scroll-snap-type: none;
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
+    }
+
+    nav {
+        background-color: var(--white-base);
+        color: var(--black-base);
+        padding: 20px;
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        margin-left: -35px;
     }
 
     .greeting {
@@ -158,7 +163,6 @@ footer {
         color: var(--white-base);
         padding: 10px;
         letter-spacing: 2px;
-        height: 100vh;
     }
 
     .h1-ft {
@@ -169,4 +173,5 @@ footer {
         font-size: 20px;
         margin: 10px;
     }
+
 }
