@@ -2,6 +2,7 @@
     --white-base : #F2F5EA;
     --black-base : #2C363F;
     --biru : #36558F;
+    --primary-shadow : 0px 10px 15px 10px rgb(0 0 0 / 15%);
 }
 
 a {
@@ -29,6 +30,7 @@ nav {
     color: var(--black-base);
     padding: 20px;
     display: flex;
+    box-shadow: var(--primary-shadow);
 }
 
 .img-logo {
@@ -60,7 +62,7 @@ nav {
 
 .nav-list {
     display: flex;
-    gap: 20px;
+    gap: 35px;
     list-style-type: none;
 }
 
@@ -107,6 +109,7 @@ video {
     background-size: 0% 100%;
     background-position-x: right;
     transition: background-size 1200ms;
+    box-shadow: var(--primary-shadow);
 }
 
 .h1-ft:hover {
@@ -120,13 +123,102 @@ video {
 }
 
 .welcome {
-    background-image: url('https://samuelmiskan9.github.io/PictureUts/bc3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: var(--biru);
+    color: var(--black-base);
+    padding: 70px 20px 20px 20px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.left-side {
+    background-color: var(--black-base);
+    color: var(--white-base);
+    padding: 20px;
+    margin: 20px 0px 20px 20px auto;
+    letter-spacing: 2px;
+    width: 300px;
+    height: 500px;
+    box-shadow: var(--primary-shadow);
+    outline: 2px solid var(--black-base);
+}
+
+.left-side:hover {
+    background-color: var(--white-base);
+    color: var(--black-base);
+    outline: 2px solid var(--black-base);
+    transition: 0.4s;
+}
+
+.right-side {
+    background-color: var(--white-base);
     color: var(--black-base);
     padding: 20px;
-    height: 100vh;
+    letter-spacing: 2px;
+    margin: 0px 20px 20px 0px auto;
+    width: 700px;
+    height: 500px;
+    box-shadow: var(--primary-shadow);
+    outline: 2px solid var(--black-base);
 }
+
+.right-side:hover {
+    background-color: var(--black-base);
+    color: var(--white-base);
+    outline: 2px solid var(--black-base);
+    transition: 0.4s;
+}
+
+.yt-frame {
+    border: 2px solid black;
+    width:690px; 
+    height:415px;
+}
+
+#visimisi {
+    background-image: url('assets/bgvisimisi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter {
+    background-color: rgb(0 0 0 / 55%);
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.visimisi-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.visi {
+    background-color: rgba(255, 255, 255, 0.55);
+    color: var(--black-base);
+    padding: 20px;
+    margin: 20px 0px 20px 20px auto;
+    letter-spacing: 2px;
+    width: 300px;
+    height: 500px;
+    box-shadow: var(--primary-shadow);
+}
+
+.misi {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: var(--white-base);
+    padding: 20px;
+    letter-spacing: 2px;
+    margin: 0px 20px 20px 0px auto;
+    width: 700px;
+    height: 500px;
+    box-shadow: var(--primary-shadow);
+}
+
+
 
 footer {
     background-color: var(--white-base);
@@ -162,6 +254,7 @@ footer {
         color: var(--white-base);
         padding: 10px;
         letter-spacing: 2px;
+        height: 100vh;
     }
 
     .h1-ft {
@@ -171,6 +264,67 @@ footer {
     .h1-univ {
         font-size: 20px;
         margin: 10px;
+    }
+
+    .welcome {
+        background-color: var(--biru);
+        color: var(--black-base);
+        padding: 70px 20px 20px 20px;
+        display: block;
+        height: 200vh;
+    }
+    
+    .left-side{
+        background-color: var(--black-base);
+        color: var(--white-base);
+        padding: 20px;
+        letter-spacing: 2px;
+        width: 300px;
+    }
+    
+    .right-side{
+        background-color: var(--white-base);
+        color: var(--black-base);
+        padding: 20px;
+        letter-spacing: 2px;
+        width: 300px;
+    }
+
+    .yt-frame {
+        border: 2px solid black;
+        width: 290px; 
+        height: 155px;
+    }
+
+    .filter {
+        background-color: rgb(0 0 0 / 55%);
+        height: 190vh;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .visimisi-container {
+        display: block;
+        text-align: left;
+        padding: 0px;
+    }
+
+    .visi {
+        background-color: rgba(255, 255, 255, 0.55);
+        color: var(--black-base);
+        padding: 20px;
+        letter-spacing: 2px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .misi {
+        background-color: rgba(0, 0, 0, 0.55);
+        color: var(--white-base);
+        padding: 20px;
+        letter-spacing: 2px;
+        width: 300px;
+        height: 650px;
     }
 
 }
