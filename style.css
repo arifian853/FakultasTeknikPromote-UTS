@@ -132,6 +132,22 @@ video {
     gap: 0;
 }
 
+.tag {
+    display: flex;
+    justify-content: center;
+    gap: -1;
+}
+
+.tag-content {
+    background-color: var(--biru);
+    padding: 5px;
+    font-size: 10px;
+    color: var(--white-base);
+    width: 90px;
+    text-align: center;
+    box-shadow: var(--primary-shadow);
+}
+
 .left-side {
     background-color: var(--black-base);
     color: var(--white-base);
@@ -230,12 +246,12 @@ video {
     display: flex;
     justify-content: center;
     gap: 40;
+    margin-bottom: 80px;
 }
 
 .major-visi {
     height: 140px;
 }
-
 
 .major-list {
     padding: 20px;
@@ -267,6 +283,7 @@ video {
     background-color: var(--black-base);
     cursor: pointer;
     color: var(--white-base);
+    border: 2px solid var(--white-base);
 }
 
 .major-list:hover .img-major {
@@ -294,7 +311,7 @@ video {
     background-repeat: no-repeat;
     background-size: 0% 100%;
     background-position-x: right;
-    transition: background-size 1200ms;
+    transition: background-size 400ms;
 }
 
 .major-list:hover .major-button {
@@ -311,7 +328,110 @@ video {
     background-repeat: no-repeat;
 }
 
+.filter-acc {
+    background-color: rgb(0 0 0 / 55%);
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
 
+.accreditation-container {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap : 20;
+}
+
+.accreditation-list {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: var(--biru);
+    color: var(--white-base);
+    box-shadow: var(--primary-shadow);
+    width: 300px;
+    z-index: 1;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--white-base);
+    letter-spacing: 2px;
+}
+
+.accreditation-list:hover {
+    background-color: var(--white-base);
+    color: var(--black-base);
+    border: 2px solid var(--black-base);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.acc-value {
+    font-size: 40px;
+    background-color: var(--white-base);
+    color: var(--biru);
+    padding: 10px;
+    height: auto;
+    box-shadow: var(--primary-shadow);
+}
+
+.accreditation-list:hover .acc-value {
+    background-color: var(--biru);
+    color: var(--white-base);
+    transition: 0.4s;
+}
+
+#dosen-list {
+    background-color: var(--biru);
+    padding: 20px;
+    text-align: center;
+}
+
+.lecturer {
+    background-color: var(--biru);
+    padding: 20px;
+    color: var(--white-base);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tabel-dosen {
+    background-color: var(--white-base);
+    color: var(--black-base);
+    margin: 0 auto;
+    width: 500px;
+    border: 2px solid var(--black-base);
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: var(--primary-shadow);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+tr, td {
+    background-color: var(--white-base);
+    text-align: left;
+    border-bottom: 1px solid var(--black-base);
+    border-right: 1px solid var(--black-base);
+    padding: 10px;
+}
+
+.nama-dosen {
+    text-decoration: none;
+    color: var(--biru);
+    padding: 2px;
+}
+
+.nama-dosen:hover {
+    background-color: var(--black-base);
+    color: var(--white-base);
+    cursor: pointer;
+}
 
 
 footer {
@@ -463,5 +583,47 @@ footer {
         padding: 20px;
         z-index: 99;
         background-color: var(--white-base);
+    }
+
+    .accreditation-container {
+        display: block;
+        padding: 1px;
+    }
+
+    .accreditation-list {
+        padding: 20px;
+        margin: 0 auto;
+        background-color: var(--biru);
+        color: var(--white-base);
+        box-shadow: var(--primary-shadow);
+        width: 300px;
+        z-index: 1;
+        margin-top: 50px;
+        border-radius: 10px;
+        border: 2px solid var(--white-base);
+    }
+
+    .filter-acc {
+        background-color: rgb(0 0 0 / 55%);
+        height: 210vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .lecturer {
+        background-color: var(--biru);
+        padding: 20px;
+        color: var(--white-base);
+        display: block;
+        text-align: center;
+    }
+
+    .tabel-dosen {
+        background-color: var(--white-base);
+        color: var(--black-base);
+        margin: 10px auto;
+        width: 300px;
+        border: 2px solid var(--black-base);
+        overflow-x: auto;
     }
 }
