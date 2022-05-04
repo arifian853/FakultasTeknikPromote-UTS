@@ -383,6 +383,7 @@ video {
     background-color: var(--biru);
     padding: 20px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .lecturer {
@@ -410,15 +411,25 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #ddd;
 }
 
-tr, td {
-    background-color: var(--white-base);
+th {
+    background-color: rgb(192, 189, 189);
     text-align: left;
     border-bottom: 1px solid var(--black-base);
     border-right: 1px solid var(--black-base);
     padding: 10px;
+}
+
+tr, td {
+    text-align: left;
+    border-bottom: 1px solid var(--black-base);
+    border-right: 1px solid var(--black-base);
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(192, 189, 189);
 }
 
 .nama-dosen {
@@ -431,6 +442,17 @@ tr, td {
     background-color: var(--black-base);
     color: var(--white-base);
     cursor: pointer;
+}
+
+#invitation {
+    background-image: url('assets/bg-invitation.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.invitation-container {
+    padding: 40px;
+    letter-spacing: 2px;
 }
 
 
