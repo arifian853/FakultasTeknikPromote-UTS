@@ -34,9 +34,8 @@ nav {
 }
 
 .img-logo {
-    height: 30px;
+    height: 60px;
     width: auto;
-    margin: 10px;
 }
 
 .nav-link {
@@ -359,7 +358,7 @@ video {
 .accreditation-list:hover {
     background-color: var(--white-base);
     color: var(--black-base);
-    border: 2px solid var(--black-base);
+    border: 2px solid var(--biru);
     transition: 0.4s;
     cursor: pointer;
 }
@@ -450,9 +449,79 @@ tr:nth-child(even) {
     background-repeat: no-repeat;   
 }
 
+.filter-invitation {
+    background-color: rgb(0 0 0 / 55%);
+    height: 110vh;
+    padding: 20px;
+    text-align: center;
+}
+
 .invitation-container {
-    padding: 40px;
+    padding: 20px;
     letter-spacing: 2px;
+}
+
+.form {
+    background-color: var(--biru);
+    color: var(--white-base);
+    padding: 20px;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid var(--white-base);
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    width: 470px;
+    background-color: var(--white-base);
+    color: var(--black-base);
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+select {
+    padding: 12px;
+    background-color: var(--white-base);
+    color: var(--black-base);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 490px;
+}
+
+.btn-form {
+    padding: 12px;
+    background-color: var(--white-base);
+    color: var(--black-base);
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        #36558F 90%,
+        #36558F 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 400ms;
+}
+
+.btn-form:hover {
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-position-x: left;
+    outline: 2px solid var(--black-base);
 }
 
 
@@ -461,6 +530,32 @@ footer {
     color: var(--black-base);
     padding: 20px;
     text-align: center;
+}
+
+#scroll-top-btn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color:  var(--black-base); 
+    color: var(--white-base); 
+    cursor: pointer; 
+    padding: 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; 
+    font-size: 15px; 
+    scroll-behavior: smooth;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.76);
+}
+  
+#scroll-top-btn:hover {
+    background-color:  var(--biru);
+    color: var(--white-base);
+    transition: 0.4s;
 }
 
 @media screen and (max-width: 768px) {
@@ -647,5 +742,36 @@ footer {
         width: 300px;
         border: 2px solid var(--black-base);
         overflow-x: auto;
+    }
+
+    .filter-invitation {
+        background-color: rgb(0 0 0 / 55%);
+        height: 150vh;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .invitation-container {
+        padding: 10px;
+        letter-spacing: 2px;
+    }
+    
+    .form {
+        background-color: var(--biru);
+        color: var(--white-base);
+        padding: 20px;
+        margin: 0 auto;
+        width: 300px;
+        border-radius: 10px;
+        border: 2px solid var(--white-base);
+        text-align: left;
+    }
+
+    input {
+        width: 275px;
+    }
+
+    select {
+        width: 290px;
     }
 }

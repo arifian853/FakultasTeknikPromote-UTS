@@ -334,17 +334,37 @@
             </div>
         </section>
         <section id="invitation">
-            <div class="filter">
+            <div class="filter-invitation">
                 <div class="invitation-container">
                     <h1>Tertarik untuk bergabung ?</h1>
                     <p>Isi form dibawah untuk mendapatkan info melalui email tentang informasi penerimaan mahasiswa untuk Fakultas Teknik Universitas Maritim Raja Ali Haji.</p>
+                    <div class="form">
+                        <h3>Nama Lengkap</h3>
+                        <input type="text" name="nama" placeholder="Masukkan nama lengkap" id="">
+                        <h3>Alamat Email</h3>
+                        <input type="email" name="email" placeholder="Masukkan alamat email" id="">
+                        <h3>Nomor telepon/HP</h3>
+                        <input type="text" name="noHP" placeholder="Masukkan nomor telepon/HP" id="">
+                        <h3>Info prodi yang diinginkan</h3>
+                        <select name="pilihan-prodi" id="">
+                            <option value="Teknik Elektro">Teknik Elektro</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Teknik Perkapalan">Teknik Perkapalan</option>
+                        </select>
+                        <br> <br>
+                        <a href=""> <p class="btn-form">Submit</p></a>
+
+                    </div>
                 </div>
             </div>
         </section>
+        <button onclick="topFunction()" id="scroll-top-btn" title="Go to top">&#x25B2;</button>
     </body>
+    
     <footer>
             Copyright © Arifian Saputra @ Universitas Maritim Raja Ali Haji, 2022. All Rights Reserved.
             <hr>
             Senggarang, Kota Tanjung Pinang, Kepulauan Riau
     </footer>
 </html>
+<script src="script.js"></script>
