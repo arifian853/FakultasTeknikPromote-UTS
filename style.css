@@ -192,7 +192,7 @@ video {
 }
 
 #visimisi {
-    background-image: url('assets/bgvisimisi.jpg');
+    background-image: url('https://arifian853.github.io/FakultasTeknikPromote-UTS/assets/bgvisimisi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -322,7 +322,7 @@ video {
 }
 
 #accreditation {
-    background-image: url('assets/bg-akreditasi.jpg');
+    background-image: url('https://arifian853.github.io/FakultasTeknikPromote-UTS/assets/bg-akreditasi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -444,7 +444,7 @@ tr:nth-child(even) {
 }
 
 #invitation {
-    background-image: url('assets/bg-invitation.jpg');
+    background-image: url('https://arifian853.github.io/FakultasTeknikPromote-UTS/assets/bg-invitation.jpg');
     background-size: cover;
     background-repeat: no-repeat;   
 }
@@ -522,6 +522,31 @@ select {
     background-size: 100% 100%;
     background-position-x: left;
     outline: 2px solid var(--black-base);
+}
+
+.thanks-page {
+    background-color: var(--biru);
+    padding: 20px;
+    display: block;
+    letter-spacing: 2px;
+    color: var(--white-base);
+    text-align: center;
+}
+
+.thanks-link {
+    padding: 10px;
+    color: var(--black-base);
+    background-color: var(--white-base);
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: var(--primary-shadow);
+}
+
+.thanks-link:hover {
+    background-color: var(--black-base);
+    color: var(--white-base);
+    transition: 0.4s;
 }
 
 
@@ -773,5 +798,15 @@ footer {
 
     select {
         width: 290px;
+    }
+
+    .thanks-link {
+        padding: 10px;
+        color: var(--black-base);
+        background-color: var(--white-base);
+        border-radius: 10px;
+        width: 300px;
+        margin: 20px auto;
+        box-shadow: var(--primary-shadow);
     }
 }
