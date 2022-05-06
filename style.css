@@ -413,10 +413,11 @@ video {
     border: 2px solid var(--black-base);
     background-color: var(--white-base);
     color: var(--black-base);
-    width: 350px;
-    text-align: left;
+    width: 340px;
+    text-align:left;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: var(--primary-shadow);
 }
 
 .kompetensi-list:hover {
@@ -430,6 +431,15 @@ video {
 .kompetensi-list h2 {
     text-align: center;
 }
+
+#organization {
+    background-image: url('https://arifian853.github.io/Teknik-Informatika-Promotion-UTS/assets/bg-organization.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
 
 #dosen-list {
     background-color: var(--biru);
@@ -574,11 +584,10 @@ input {
     letter-spacing: 2px;
     color: var(--white-base);
     text-align: center;
-    height: 100vh;
 }
 
 .link-container {
-    margin: 150px auto;
+    margin: 10px auto;
 }
 
 .thanks-link {
@@ -799,7 +808,7 @@ footer {
 
     .filter-acc {
         background-color: rgb(0 0 0 / 55%);
-        height: 210vh;
+        height: 90vh;
         padding: 20px;
         text-align: center;
     }
@@ -849,7 +858,7 @@ footer {
     }
 
     .link-container {
-        margin: 150px auto;
+        margin: 10px auto;
     }
 
     .thanks-page {
