@@ -94,7 +94,7 @@ video {
     background-color: var(--white-base);
     color: var(--black-base);
     padding: 5px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 150px;
     font-size: 80px;
@@ -192,7 +192,7 @@ video {
 }
 
 #visimisi {
-    background-image: url('https://arifian853.github.io/FakultasTeknikPromote-UTS/assets/bgvisimisi.jpg');
+    background-image: url('https://arifian853.github.io/Teknik-Informatika-Promotion-UTS/assets/bgvisimisi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -202,6 +202,7 @@ video {
     height: 100vh;
     padding: 20px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .visimisi-container {
@@ -220,6 +221,7 @@ video {
     width: 300px;
     height: 500px;
     box-shadow: var(--primary-shadow);
+    text-align: center;
 }
 
 .misi {
@@ -244,7 +246,7 @@ video {
 .major-container {
     display: flex;
     justify-content: center;
-    gap: 40;
+    gap: 10;
     margin-bottom: 80px;
 }
 
@@ -321,8 +323,22 @@ video {
     background-position-x: left;
 }
 
+.major-goals {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: var(--white-base);
+    color: var(--black-base);
+    box-shadow: var(--primary-shadow);
+    width: 700px;
+    z-index: 1;
+    margin-top: 50px;
+    border: 2px solid var(--black-base);
+    border-radius: 10px;
+    text-align: left;
+}
+
 #accreditation {
-    background-image: url('https://arifian853.github.io/FakultasTeknikPromote-UTS/assets/bg-akreditasi.jpg');
+    background-image: url('https://arifian853.github.io/Teknik-Informatika-Promotion-UTS/assets/bg-akreditasi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -376,6 +392,43 @@ video {
     background-color: var(--biru);
     color: var(--white-base);
     transition: 0.4s;
+}
+
+.kompetensi {
+    background-color: var(--biru);
+    padding: 20px;
+    color: var(--white-base);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.kompetensi-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.kompetensi-list {
+    padding: 15px;
+    border: 2px solid var(--black-base);
+    background-color: var(--white-base);
+    color: var(--black-base);
+    width: 350px;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.kompetensi-list:hover {
+    border: 2px solid var(--white-base);
+    background-color: var(--black-base);
+    color: var(--white-base);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.kompetensi-list h2 {
+    text-align: center;
 }
 
 #dosen-list {
@@ -444,7 +497,7 @@ tr:nth-child(even) {
 }
 
 #invitation {
-    background-image: url('https://arifian853.github.io/FakultasTeknikPromote-UTS/assets/bg-invitation.jpg');
+    background-image: url('https://arifian853.github.io/Teknik-Informatika-Promotion-UTS/assets/bg-invitation.jpg');
     background-size: cover;
     background-repeat: no-repeat;   
 }
@@ -484,16 +537,6 @@ input {
     font-size: 16px;
 }
 
-select {
-    padding: 12px;
-    background-color: var(--white-base);
-    color: var(--black-base);
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-radius: 10px;
-    width: 490px;
-}
 
 .btn-form {
     padding: 12px;
@@ -526,11 +569,16 @@ select {
 
 .thanks-page {
     background-color: var(--biru);
-    padding: 20px;
+    padding: 60px;
     display: block;
     letter-spacing: 2px;
     color: var(--white-base);
     text-align: center;
+    height: 100vh;
+}
+
+.link-container {
+    margin: 150px auto;
 }
 
 .thanks-link {
@@ -727,6 +775,10 @@ footer {
         background-color: var(--white-base);
     }
 
+    .major-goals {
+        width: 300px;
+    }
+
     .accreditation-container {
         display: block;
         padding: 1px;
@@ -796,8 +848,12 @@ footer {
         width: 275px;
     }
 
-    select {
-        width: 290px;
+    .link-container {
+        margin: 150px auto;
+    }
+
+    .thanks-page {
+        padding: 20px;
     }
 
     .thanks-link {
@@ -809,4 +865,20 @@ footer {
         margin: 20px auto;
         box-shadow: var(--primary-shadow);
     }
+
+    .kompetensi-container {
+        display: block;
+    }
+    
+    .kompetensi-list {
+        padding: 15px;
+        width: 300px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .kompetensi-list h2 {
+        text-align: center;
+    }
+    
 }
