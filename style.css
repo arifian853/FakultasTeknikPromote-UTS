@@ -438,7 +438,62 @@ video {
     background-repeat: no-repeat;
 }
 
+.filter-organisasi {
+    background-color: rgb(0 0 0 / 55%);
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
 
+.organisasi-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.organisasi-list {
+    background-color: var(--white-base);
+    color: var(--black-base);
+    border: 2px solid var(--biru);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.org-img {
+    height: 150px;
+    width: auto;
+}
+
+.org-link {
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--black-base);
+    color: var(--white-base);
+    background-image: linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        #36558F 90%,
+        #36558F 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 400ms;
+    box-shadow: var(--primary-shadow);
+}
+
+.org-link:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+    background-color: var(--white-base);
+    color: var(--black-base);
+}
 
 
 #dosen-list {
@@ -546,7 +601,6 @@ input {
     outline: none;
     font-size: 16px;
 }
-
 
 .btn-form {
     padding: 12px;
@@ -833,19 +887,19 @@ footer {
     .filter-invitation {
         background-color: rgb(0 0 0 / 55%);
         height: 150vh;
-        padding: 10px;
+        padding: 20px;
         text-align: center;
     }
     
     .invitation-container {
-        padding: 10px;
+        padding: 1px;
         letter-spacing: 2px;
     }
     
     .form {
         background-color: var(--biru);
         color: var(--white-base);
-        padding: 20px;
+        padding: 15px;
         margin: 0 auto;
         width: 300px;
         border-radius: 10px;
@@ -887,6 +941,34 @@ footer {
     }
     
     .kompetensi-list h2 {
+        text-align: center;
+    }
+
+    .organisasi-container {
+        padding: 20px;
+        display: block;
+    }
+    
+    .organisasi-list {
+        background-color: var(--white-base);
+        color: var(--black-base);
+        border: 2px solid var(--biru);
+        padding: 10px;
+        text-align: center;
+        width: 300px;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+    
+    .org-img {
+        height: 120px;
+        width: auto;
+    }
+    
+    .filter-organisasi {
+        background-color: rgb(0 0 0 / 55%);
+        height: 200vh;
+        padding: 10px;
         text-align: center;
     }
     
