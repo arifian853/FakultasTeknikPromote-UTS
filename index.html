@@ -261,14 +261,21 @@
                     <p>Isi form dibawah untuk mendapatkan info melalui email tentang informasi penerimaan mahasiswa untuk prodi Teknink Informatika di Universitas Maritim Raja Ali Haji.</p>
                     <div class="form">
                         <h3>Nama Lengkap</h3>
-                        <input type="text" name="nama" placeholder="Masukkan nama lengkap" id="">
+                        <input type="text" name="nama" placeholder="Nama lengkap, cth : Arifian Saputra" id="">
                         <h3>Alamat Email</h3>
-                        <input type="email" name="email" placeholder="Masukkan alamat email" id="">
+                        <input type="email" name="email" placeholder="Alamat email, cth : email123@gmail.com" id="">
                         <h3>Nomor telepon/HP</h3>
-                        <input type="text" name="noHP" placeholder="Masukkan nomor telepon/HP" id="">
+                        <input type="text" name="noHP" placeholder="Nomor telepon/HP, cth : 0823xxxxxxxx" id="">
                         <br> <br>
-                        <a href=""> <p class="btn-form">Submit</p></a>
-
+                        <button class="btn-form" id="ButtonModal">Submit</button>
+                        <div class="modal-container" id="MainModal">
+                            <div class="main-modal">
+                                <div class="modal-header">Peringatan</div>
+                                <h3>Terima kasih telah bergabung !</h3>
+                                <hr>
+                                <div class="close">Ok</di>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -294,3 +301,4 @@
     </footer>
 </html>
 <script src="https://arifian853.github.io/Teknik-Informatika-Promotion-UTS/script.js"></script>
+<script src="modal.js"></script>
